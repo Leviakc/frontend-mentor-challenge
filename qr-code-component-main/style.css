@@ -31,6 +31,7 @@ main {
   border-radius: 20px;
   width: 30rem;
   height: 50rem;
+  margin-top: 1.5em;
   padding: 1.5rem 1.5rem;
   box-shadow: 1px 1px 10px #adb5bd80;
 }
