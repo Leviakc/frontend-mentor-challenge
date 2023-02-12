@@ -118,6 +118,7 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
 
 @media (min-width: 600px) {
