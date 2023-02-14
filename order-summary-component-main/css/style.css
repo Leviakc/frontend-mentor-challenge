@@ -1,0 +1,84 @@
+:root {
+  /*primary color*/
+  --primary-pale-color: hsl(225, 100%, 94%);
+  --primary-bright: hsl(245, 75%, 52%);
+
+  /*neutral*/
+  --neutral-pale-color: #f5f3ff;
+  --neutra-desaturated-color: hsl(224, 23%, 55%);
+  --neutral-dark-blue-color: hsl(223, 47%, 23%);
+
+  /*other colors*/
+  --bg-color: #f5f5fa;
+  --link-color: hsl(228, 45%, 44%);
+
+  /*font family*/
+  --ff: "Red Hat Display", sans-serif;
+
+  /*font weight*/
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--neutral-dark-blue-color);
+  background-color: var(--primary-pale-color);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+.product {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+
+  /*background-color: var(--neutral-pale-color);*/
+  /*background-color: var(--bg-color);*/
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+
+.product__title {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: var(--content-padding);
+}
+
+.flex-group {
+  display: flex;
+  gap: 1.3rem;
+  flex-wrap: wrap;
+  /*justify-content: space-evenly;*/
+  align-items: center;
+  background-color: var(--neutral-pale-color);
+  margin: 1rem 1.3rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.flex-group::before {
+  content: "";
+  background-image: url(../images/icon-music.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-self: stretch;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--link-color);
+  text-decoration: none;
+}
