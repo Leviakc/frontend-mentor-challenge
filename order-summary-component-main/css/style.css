@@ -39,27 +39,39 @@ body {
   /*background-color: var(--neutral-pale-color);*/
   /*background-color: var(--bg-color);*/
   background-color: #fff;
+  display: grid;
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 1rem;
-  max-width: 600px;
+  margin: 0 0.5rem 2rem;
+  max-width: 400px;
+}
+
+picture {
+  display: flex;
 }
 
 .product__title {
   font-size: 1.3rem;
   text-align: center;
   padding: var(--content-padding);
+  font-weight: var(--fw-black);
+}
+
+.product__paragraph {
+  color: var(--neutra-desaturated-color);
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 .flex-group {
-  display: flex;
+  display: grid;
   gap: 1.3rem;
-  flex-wrap: wrap;
-  /*justify-content: space-evenly;*/
-  align-items: center;
+  grid-template-columns: 1fr 1fr 2fr;
   background-color: var(--neutral-pale-color);
-  margin: 1rem 1.3rem;
-  padding: 1rem 0.5rem;
+  margin: 0.7rem 2rem;
+  padding: 1.3rem 0.5rem;
   border-radius: 0.8rem;
 }
 
@@ -70,7 +82,75 @@ body {
   background-repeat: no-repeat;
   height: 2.5rem;
   width: 2.5rem;
-  align-self: stretch;
+  margin-left: 0.5rem;
+}
+
+.product__plan {
+  margin-left: -1.5rem;
+}
+
+.product__plan--period {
+  font-weight: var(--fw-bold);
+  font-size: 15px;
+}
+
+.product__price {
+  color: var(--neutra-desaturated-color);
+}
+
+.btn-change {
+  background-color: var(--neutral-pale-color);
+  border: none;
+  color: var(--primary-bright);
+  text-decoration: underline;
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  justify-self: end;
+  margin-right: 10px;
+}
+
+.btn-change:hover {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btns {
+  display: grid;
+}
+
+.btn-proceed {
+  /*display: flex;*/
+  background-color: var(--primary-bright);
+  border: none;
+  border-radius: 10px;
+  color: var(--primary-pale-color);
+  font-weight: var(--fw-black);
+  margin: 1.5rem 1.3rem 1.5rem;
+  padding: 0.7rem 0.5rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-proceed:hover {
+  background-color: hsl(228, 45%, 44%);
+  /*box-shadow: ;*/
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  display: block;
+  border: none;
+  font-weight: var(--fw-black);
+  font-size: 0.825rem;
+  color: var(--neutra-desaturated-color);
+  /*padding: 1.5rem 1.3rem;*/
+  margin: 0 auto 1.5rem;
+}
+
+.btn-cancel:hover {
+  color: var(--neutral-dark-blue-color);
+  cursor: pointer;
 }
 
 .attribution {
@@ -81,4 +161,18 @@ body {
 .attribution a {
   color: var(--link-color);
   text-decoration: none;
+}
+
+@media screen and (max-width: 430px) {
+  .product__paragraph {
+    padding: 0 35px;
+  }
+
+  .flex-group::before {
+    margin-right: 18px;
+  }
+
+  .product__plan--period {
+    font-size: 14px;
+  }
 }
