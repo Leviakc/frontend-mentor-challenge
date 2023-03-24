@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![frontend mentor product preview card component solution](./screenshot.png)
+![frontend mentor order summary component solution](./screenshot.png)
 
 ### Links
 
