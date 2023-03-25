@@ -26,18 +26,16 @@ body {
   font-weight: var(--fw-regular);
   font-size: 0.875rem;
   color: var(--neutral-dark-blue-color);
-  background-color: var(--primary-pale-color);
+  background: url("../images/pattern-background-desktop.svg")
+    var(--primary-pale-color) 0 -40% / contain no-repeat;
   display: grid;
   place-content: center;
-  margin: 1rem;
 }
 
 .product {
   --content-padding: 1.5rem;
   --content-spacing: 1rem;
 
-  /*background-color: var(--neutral-pale-color);*/
-  /*background-color: var(--bg-color);*/
   background-color: #fff;
   display: grid;
   border-radius: 1rem;
@@ -164,6 +162,9 @@ picture {
 }
 
 @media screen and (max-width: 430px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
   .product__paragraph {
     padding: 0 35px;
   }
