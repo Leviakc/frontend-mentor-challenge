@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/Leviakc/frontend-mentor-challenge/tree/main/order-summary-component-main)
-- Live Site URL: [Order component preview](https://resilient-clafoutis-89b5cb.netlify.app/)
+- Live Site URL: [Order component preview](https://order-summary-component-gomen.netlify.app/)
 
 ## My process
 
