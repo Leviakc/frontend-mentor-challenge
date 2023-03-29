@@ -1,0 +1,89 @@
+:root {
+  --txt-blue: hsl(238, 29%, 16%);
+  --txt-red: hsl(14, 88%, 65%);
+
+  --txt-grayish: hsl(237, 12%, 33%);
+  --txt-gray: hsl(240, 6%, 50%);
+
+  --divider-gray: hsl(240, 5%, 91%);
+
+  --bg-violet: hsl(273, 75%, 66%);
+  --bg-blue: hsl(240, 73%, 65%);
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --15px: 0.9375rem;
+  --16px: 1rem;
+  --17px: 1.0625rem;
+  --18px: 1.125rem;
+  --19px: 1.1875rem;
+  --20px: 1.25rem;
+  --21px: 1.3125rem;
+  /*--600px: 1.3125rem;*/
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--12px);
+  font-weight: var(--fw-400);
+  background-image: linear-gradient(var(--bg-violet), var(--bg-blue));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+
+  margin: 0 3rem;
+  /*margin: 0 20px;*/
+  gap: var(--14px);
+
+  max-width: 800px;
+}
+
+.container__img {
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+
+.accordion {
+  flex-grow: 1;
+  flex-basis: 250px;
+}
+
+.accordion__item {
+  border-bottom: 1px solid var(--divider-gray);
+}
+
+.accordion__btn {
+  background-color: #fff;
+  border: none;
+}
+
+.accordion__btn:hover {
+  color: var(--txt-red);
+}
+
+p {
+  font-size: var(--12px);
+}
+
+.attribution {
+  font-size: var(--14px);
+}
+
+.attribution a {
+  color: blue;
+}
+
+@media screen and (max-width: 400px) {
+}
