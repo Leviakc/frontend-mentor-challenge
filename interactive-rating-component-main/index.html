@@ -26,7 +26,7 @@
   </head>
   <body>
     <section class="card">
-      <div class="card__form hidden">
+      <div class="card__form">
         <img
           class="card__icon mb-15"
           src="images/icon-star.svg"
@@ -40,18 +40,21 @@
         </p>
 
         <div class="card__btns mb-15">
-          <button class="btn" data-test="1">1</button>
-          <button class="btn" data-test="2">2</button>
-          <button class="btn" data-test="3">3</button>
-          <button class="btn" data-test="4">4</button>
-          <button class="btn" data-test="5">5</button>
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
         </div>
 
         <button class="btn-submit">Submit</button>
       </div>
 
+      <!--loader-->
+      <div class="loader hide-loader" id="loader"></div>
+
       <!--second card div-->
-      <div class="card__form-send">
+      <div class="card__form-send hidden">
         <img
           class="card__form-icon"
           src="./images/illustration-thank-you.svg"
@@ -78,7 +81,8 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Juan Gomen</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Leviakc">Juan Gomen</a>.
     </footer>
   </body>
 </html>
