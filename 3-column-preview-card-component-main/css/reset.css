@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 
-html,
+/*html,*/
+/*body {*/
+/*height: 100%;*/
+/*}*/
+
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -46,4 +50,20 @@ h1,
 h2,
 h3 {
   line-height: 1;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
