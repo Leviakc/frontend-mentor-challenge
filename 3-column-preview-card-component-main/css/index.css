@@ -13,6 +13,7 @@ body {
   display: grid;
   place-content: center;
   font-size: 0.9375rem;
+  background-color: var(--neutral-very-light-gray);
 }
 
 .main {
@@ -108,4 +109,10 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 59.375rem) {
+  .attribution {
+    margin-bottom: 3rem;
+  }
 }
