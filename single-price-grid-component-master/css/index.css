@@ -26,13 +26,9 @@ body {
 
 .main {
   max-width: 47rem;
-  /*min-height: 32rem;*/
-  /*background-color: red;*/
-  /*margin-top: 3.4rem;*/
 }
 
 .container {
-  /*background-color: blue;*/
   margin: 1.9rem;
   display: flex;
   flex-wrap: wrap;
@@ -132,4 +128,14 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 43.75rem) {
+  .container__section3-list {
+    margin-bottom: 1.5rem;
+  }
+
+  .attribution {
+    margin-bottom: 2rem;
+  }
 }
