@@ -44,10 +44,9 @@ body {
   border-radius: 20px;
 
   margin: 0 3rem;
-  /*margin: 0 20px;*/
   gap: var(--14px);
 
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .container__img {
@@ -58,6 +57,7 @@ body {
 .accordion {
   flex-grow: 1;
   flex-basis: 250px;
+  margin: 0 5rem;
 }
 
 .accordion__item {
@@ -68,6 +68,16 @@ body {
   background-color: #fff;
   border: none;
 }
+
+/*.accordion__btn::after {*/
+/*width: 20px;*/
+/*display: inline-block;*/
+/*height: 20px;*/
+/*margin-left: auto;*/
+/*content: "";*/
+/*background-image: url("../images/icon-arrow-down.svg");*/
+/*background-repeat: no-repeat;*/
+/*}*/
 
 .accordion__btn:hover {
   color: var(--txt-red);
