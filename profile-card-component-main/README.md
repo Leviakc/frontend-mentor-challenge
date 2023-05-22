@@ -13,7 +13,6 @@ This is a solution to the [Profile card component on Frontend Mentor](https://ww
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
