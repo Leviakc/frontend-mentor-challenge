@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-column preview card component
 
-This is a solution to the [3-column preview card component on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
+This is a solution to the [Profile card component on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 . Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -22,7 +22,6 @@ This is a solution to the [3-column preview card component on Frontend Mentor](h
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
 
 ### Screenshot
 
@@ -30,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [3-column preview card component (Vanilla CSS + BEM) | frontendmentor](https://www.frontendmentor.io/solutions/3column-preview-card-component-vanilla-css-bem-Tjrs0PV1FO)
-- Live Site URL: [3-column preview card component](https://3-column-preview-card-component-gomen.netlify.app/)
+- Solution URL: [Profile card component (Vanilla CSS + BEM) | frontendmentor](https://www.frontendmentor.io/solutions/profile-card-component-vanilla-css-bem-frontendmentor-uYUwihCYkz)
+- Live Site URL: [Profile card component](https://profile-card-component-gomen.netlify.app/)
 
 ## My process
 
@@ -45,14 +44,10 @@ Users should be able to:
 
 ### What I learned
 
-I learnt a lot with this project, I struggled a lot because in my reset.css I
-had a rule was breaking everything in the mobile design.
+I learnt a lot with this project, I struggled in this challenge because I was
+not able to acomplish what I wanted
 
 ## Author
 
 - Website - [under construction]()
 - Frontend Mentor - [@Leviakc](https://www.frontendmentor.io/profile/Leviakc)
-
-## Acknowledgments
-
-I want to acknowledgment [@MelvinAguilar](https://www.frontendmentor.io/profile/MelvinAguilar) because when I was stock I checked his solution and I learnt about the `mix-blend-mode` property and learn a lot from his github so thanks Melvin because I learnt a lot from you.
