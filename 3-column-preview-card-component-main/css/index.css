@@ -1,0 +1,118 @@
+:root {
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral-transparent-white: hsla(0, 0%, 100%);
+  --neutral-very-light-gray: hsl(0, 0%, 95%);
+  /*font-family*/
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --ff-BSD: "Big Shoulders Display", cursive;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  font-size: 0.9375rem;
+  background-color: var(--neutral-very-light-gray);
+}
+
+.main {
+  margin: 2rem 1.5rem 0;
+  max-width: 57.5rem;
+}
+
+.main__container {
+  margin-top: 3.8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 31.2844rem;
+}
+
+.card {
+  height: 31.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2.5rem;
+  position: relative;
+  flex: 1 1 18rem;
+  font-family: var(--ff-lexend);
+}
+
+.card__icon {
+  max-width: 4rem;
+}
+
+.card__title {
+  font-family: var(--ff-BSD);
+  text-transform: uppercase;
+  color: var(--neutral-transparent-white);
+  font-size: 2.5rem;
+}
+
+.card__txt {
+  margin-top: -0.68rem;
+  line-height: 1.63;
+  font-weight: 400;
+  color: var(--neutral-very-light-gray);
+}
+
+.btn {
+  margin-top: auto;
+  width: fit-content;
+  bottom: 3rem;
+  background-color: var(--neutral-very-light-gray);
+  padding: 0.7rem 1.9rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  /*Aprendido*/
+  mix-blend-mode: screen;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--neutral-transparent-white);
+}
+
+.card-1 {
+  background-color: var(--primary-bright-orange);
+}
+
+.card-2 {
+  background-color: var(--primary-dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--primary-very-dark-cyan);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  clip-path: inset(50%);
+  height: 1px;
+  margin: 1rem;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.attribution {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 59.375rem) {
+  .attribution {
+    margin-bottom: 3rem;
+  }
+}
