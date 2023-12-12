@@ -1,0 +1,60 @@
+:root {
+  --clr-primary-hsl-500: 249, 99%, 64%;
+  --clr-primary-hsl-700: 278, 94%, 30%;
+
+  --clr-neutral-hsl-100: 0, 0%, 100%;
+  --clr-neutral-hsl-300: 270, 3%, 87%;
+  --clr-neutral-hsl-500: 279, 6%, 55%;
+  --clr-neutral-hsl-700: 278, 68%, 11%;
+
+  --clr-primary-500: hsl(var(--clr-primary-hsl-500));
+  --clr-primary-700: hsl(var(--clr-primary-hsl-700));
+
+  --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+  --clr-neutral-300: hsl(var(--clr-neutral-hsl-300));
+  --clr-neutral-500: hsl(var(--clr-neutral-hsl-500));
+  --clr-neutral-700: hsl(var(--clr-neutral-hsl-700));
+
+  --liner-gradient: linear-gradient(
+    to right,
+    var(--clr-primary-500),
+    var(--clr-primary-700)
+  );
+
+  --clr-accent-1: 0, 100%, 66%;
+
+  --font-family-default: "Space Grotesk", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+}
+
+body {
+  font-family: var(--font-family-default);
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  display: flex;
+}
+
+.test {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}

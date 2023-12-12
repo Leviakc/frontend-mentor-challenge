@@ -1,0 +1,73 @@
+/* 
+https://www.joshwcomeau.com/css/custom-css-reset/#three-tweaking-line-height-4
+https://stackoverflow.com/questions/65003407/setting-height100vh-vs-min-height100vh
+https://usabilitypost.com/2012/11/05/stop-fixing-font-smoothing/
+https://www.w3.org/WAI/WCAG21/Understanding/text-spacing.html
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* line-height: calc(1em + 0.5rem); */
+}
+
+body {
+  height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  /* display: block; */
+  /* max-width: 100%; */
+
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
