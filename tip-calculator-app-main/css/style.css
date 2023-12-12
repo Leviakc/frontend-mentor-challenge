@@ -1,17 +1,38 @@
 :root {
-  --color-primary: hsl(172, 67%, 45%);
+  --clr-primary-hsl-600: 172, 67%, 45%;
 
-  /* Neutrals */
-  --color-neutral-100: hsl(0, 0%, 100%);
-  --color-neutral-300: hsl(189, 41%, 97%);
-  --color-neutral-400: hsl(185, 41%, 84%);
-  --color-neutral-500: hsl(184, 14%, 56%);
-  --color-neutral-600: hsl(186, 14%, 43%);
-  --color-neutral-700: hsl(183, 100%, 15%);
+  --clr-neutral-hsl-100: 0, 0%, 100%;
+  --clr-neutral-hsl-300: 189, 41%, 97%;
+  --clr-neutral-hsl-400: 185, 41%, 84%;
+  --clr-neutral-hsl-500: 184, 14%, 56%;
+  --clr-neutral-hsl-600: 186, 14%, 43%;
+  --clr-neutral-hsl-700: 183, 100%, 15%;
+
+  --clr-primary-600: hsl(var(--clr-primary-hsl-600));
+
+  --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+  --clr-neutral-300: hsl(var(--clr-neutral-hsl-300));
+  --clr-neutral-400: hsl(var(--clr-neutral-hsl-400));
+  --clr-neutral-500: hsl(var(--clr-neutral-hsl-500));
+  --clr-neutral-600: hsl(var(--clr-neutral-hsl-600));
+  --clr-neutral-700: hsl(var(--clr-neutral-hsl-700));
+
+  --ff-default: "Space Mono", monospace;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
 
   /* - Font size (form inputs): 24px */
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
 }
 
 body {
-  font-family: "Space Mono", monospace;
+  font-family: var(--ff-default);
 }
